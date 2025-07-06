@@ -17,14 +17,17 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "cdn.pixabay.com",
+        // (optional) pathname: "/**",
       },
       {
         protocol: "https",
         hostname: "img.freepik.com",
+        // (optional) pathname: "/**",
       },
       {
         protocol: "https",
-        hostname: "cloud.appwrite.io",
+        hostname: "syd.cloud.appwrite.io",  // 👈 exact Appwrite endpoint
+        pathname: "/**",                    // 👈 allow all paths under it
       },
     ],
   },
